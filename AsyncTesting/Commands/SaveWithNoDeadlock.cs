@@ -24,8 +24,6 @@ namespace AsyncTesting.Commands
             TheViewModel vm = parameter as TheViewModel;
             vm.CurrentThreadID = Thread.CurrentThread.ManagedThreadId;
 
-            //Blocks while CallSomethingAsync runs. CallSomethingAsync
-            //cannot resume on the context because .Result is blocking.
             string msg =  CallSomethingAsync(vm).Result;
             vm.CurrentThreadID = Thread.CurrentThread.ManagedThreadId;
             vm.UpdateDescription(msg);
