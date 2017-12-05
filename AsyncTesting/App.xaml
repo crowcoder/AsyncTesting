@@ -1,0 +1,28 @@
+﻿<Application x:Class="AsyncTesting.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:AsyncTesting"
+             StartupUri="MainWindow.xaml">
+    <Application.Resources>
+        <Style TargetType="Label">
+            <Setter Property="Padding" Value="3" />
+            <Setter Property="Margin" Value="3" />
+            <Setter Property="FontSize" Value="14" />
+            <Setter Property="FontWeight" Value="Bold"/>
+        </Style>
+
+        <Style TargetType="TextBox">
+            <Setter Property="Padding" Value="3" />
+            <Setter Property="Margin" Value="3" />
+            <Setter Property="FontSize" Value="14" />
+            <Setter Property="HorizontalAlignment" Value="Stretch" />
+        </Style>
+
+        <Style TargetType="Button" >
+            <Setter Property="HorizontalAlignment" Value="Left" />
+            <Setter Property="Width" Value="250" />
+            <Setter Property="Margin" Value="5" />
+        </Style>
+
+    </Application.Resources>
+</Application>

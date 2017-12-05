@@ -1,0 +1,17 @@
+C:\Users\rcrowley\Source\Repos\AsyncTesting\AsyncTesting\bin\Debug\AsyncTesting.exe.config
+C:\Users\rcrowley\Source\Repos\AsyncTesting\AsyncTesting\bin\Debug\AsyncTesting.exe
+C:\Users\rcrowley\Source\Repos\AsyncTesting\AsyncTesting\bin\Debug\AsyncTesting.pdb
+C:\Users\rcrowley\Source\Repos\AsyncTesting\AsyncTesting\obj\Debug\AsyncTesting.csprojResolveAssemblyReference.cache
+C:\Users\rcrowley\Source\Repos\AsyncTesting\AsyncTesting\obj\Debug\MainWindow.g.cs
+C:\Users\rcrowley\Source\Repos\AsyncTesting\AsyncTesting\obj\Debug\App.g.cs
+C:\Users\rcrowley\Source\Repos\AsyncTesting\AsyncTesting\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\rcrowley\Source\Repos\AsyncTesting\AsyncTesting\obj\Debug\AsyncTesting_MarkupCompile.cache
+C:\Users\rcrowley\Source\Repos\AsyncTesting\AsyncTesting\obj\Debug\AsyncTesting_MarkupCompile.lref
+C:\Users\rcrowley\Source\Repos\AsyncTesting\AsyncTesting\obj\Debug\MainWindow.baml
+C:\Users\rcrowley\Source\Repos\AsyncTesting\AsyncTesting\obj\Debug\AsyncTesting.g.resources
+C:\Users\rcrowley\Source\Repos\AsyncTesting\AsyncTesting\obj\Debug\AsyncTesting.Properties.Resources.resources
+C:\Users\rcrowley\Source\Repos\AsyncTesting\AsyncTesting\obj\Debug\AsyncTesting.csproj.GenerateResource.Cache
+C:\Users\rcrowley\Source\Repos\AsyncTesting\AsyncTesting\obj\Debug\AsyncTesting.csproj.CoreCompileInputs.cache
+C:\Users\rcrowley\Source\Repos\AsyncTesting\AsyncTesting\obj\Debug\AsyncTesting.exe
+C:\Users\rcrowley\Source\Repos\AsyncTesting\AsyncTesting\obj\Debug\AsyncTesting.pdb
+C:\Users\rcrowley\Source\Repos\AsyncTesting\AsyncTesting\obj\Debug\App.baml
