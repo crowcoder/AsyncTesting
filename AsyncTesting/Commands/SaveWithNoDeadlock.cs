@@ -35,7 +35,7 @@ namespace AsyncTesting.Commands
         private async Task<string> CallSomethingAsync(TheViewModel vm)
         {
             //quick delay just to (attempt) to switch threads
-            await Task.Delay(10).ConfigureAwait(continueOnCapturedContext:false);           
+            await Task.Delay(1).ConfigureAwait(continueOnCapturedContext:false);           
             vm.CurrentThreadID = Thread.CurrentThread.ManagedThreadId;
             await Task.Delay(1000).ConfigureAwait(continueOnCapturedContext: false);
             return $"No deadlock because blocking call is on different context.";
