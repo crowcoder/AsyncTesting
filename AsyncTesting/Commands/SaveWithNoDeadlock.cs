@@ -1,8 +1,10 @@
 ﻿using AsyncTesting.Models;
 using System;
+using System.Diagnostics;
 using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Input;
+using System.Windows.Threading;
 
 namespace AsyncTesting.Commands
 {
@@ -26,14 +28,14 @@ namespace AsyncTesting.Commands
 
             //Blocks while CallSomethingAsync runs. CallSomethingAsync
             //cannot resume on the context because .Result is blocking.
-            string msg =  CallSomethingAsync(vm).Result;
-            vm.CurrentThreadID = Thread.CurrentThread.ManagedThreadId;
-            vm.UpdateDescription(msg);
+            var msg = CallSomethingAsync(vm); 
+            vm.UpdateDescription(msg.Result);
         }
 
         private async Task<string> CallSomethingAsync(TheViewModel vm)
         {
-            await Task.Delay(10).ConfigureAwait(continueOnCapturedContext:false);
+            //quick delay just to (attempt) to switch threads
+            await Task.Delay(10).ConfigureAwait(continueOnCapturedContext:false);           
             vm.CurrentThreadID = Thread.CurrentThread.ManagedThreadId;
             await Task.Delay(1000).ConfigureAwait(continueOnCapturedContext: false);
             return $"No deadlock because blocking call is on different context.";

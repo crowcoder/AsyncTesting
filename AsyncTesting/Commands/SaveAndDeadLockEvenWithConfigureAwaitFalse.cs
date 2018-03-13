@@ -24,10 +24,7 @@ namespace AsyncTesting.Commands
             TheViewModel vm = parameter as TheViewModel;
             vm.CurrentThreadID = Thread.CurrentThread.ManagedThreadId;
 
-            //Blocks while CallSomethingAsync runs. CallSomethingAsync
-            //has switched contexts even though ConfigureAwait(false)
-            //is used! This is because the library code does not also
-            //use ConfigureAwait(false);
+            //Blocks while CallSomethingAsync runs. 
             string msg =  CallSomethingAsync(vm).Result;
             vm.CurrentThreadID = Thread.CurrentThread.ManagedThreadId;
             vm.UpdateDescription(msg);
